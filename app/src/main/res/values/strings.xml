@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SimpleAndroidApp</string>
     <string name="action_settings">Settings</string>
+    <string name="getlikes">GetLikes</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
 </resources>

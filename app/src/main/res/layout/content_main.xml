@@ -9,11 +9,109 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.yolanda.simpleandroidapp.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.example.yolanda.simpleandroidapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:background="@color/dim_foreground_material_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:text="@string/getlikes"
+            android:paddingStart="100dp"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:inputType="text"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/mail"
+        android:layout_marginBottom="147dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Username or Email"
+        android:autoText="true"
+        android:paddingRight="0dp"
+        android:paddingLeft="100dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/mail"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Password"
+        android:paddingLeft="130dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with_facebook"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginTop="109dp"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:shadowColor="@color/material_deep_teal_500"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:text="sign in with twitter "
+        android:id="@+id/button2"
+        android:layout_marginTop="29dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@+id/button"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:background="@android:color/holo_blue_light"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="or"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="true"
+        android:background="@color/abc_primary_text_material_dark"
+        android:layout_marginRight="160dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
 </RelativeLayout>
